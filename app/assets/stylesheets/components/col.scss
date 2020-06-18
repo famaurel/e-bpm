@@ -1,18 +1,28 @@
+@font-face {
+  font-family: "Casual Regular";
+  src: url(../fonts/Casual-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Designosaur";
+  src: url(../fonts/Designosaur.ttf) format("truetype");
+}
+
 h1 {
-  font-size: 18px !important;
-  margin-bottom: 30px !important;
+  font-size: 30px !important;
+  font-family: "Designosaur"
 }
 
 .background-blue-1 {
-  background: #3C7097
+  background: #0D4C7D
 }
 
 .background-blue-2 {
-  background: #F2F9FD
+  background: rgba(109, 146, 176, 0.4)
 }
 
 .background-blue-3 {
-  background: #C6D3DF
+  background: #6D92B0
 }
 
 .background-blue-4 {
@@ -21,6 +31,10 @@ h1 {
 
 .background-blue-5 {
   background: #46597D
+}
+
+.background-blue-6 {
+  background: rgba(111, 194, 233, 0.1)
 }
 
 
@@ -33,6 +47,10 @@ h1 {
   color: #0D4C7D
 }
 
+.text-orange {
+  color: #FC810E;
+}
+
 .col-logo{
   img {
     max-width: 100%;
@@ -41,15 +59,48 @@ h1 {
 
 .col-md-4 {
   padding: 20px !important;
+  border-top: 30px solid white;
+  border-bottom: 30px solid white;
+  border-left: 15px solid white;
+  border-right: 15px solid white;
+  p {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  h1 {
+  margin-top: 80px !important;
+  }
+  h2 {
+  font-size: 22px !important;
+  }
+  h3 {
+  font-size: 22px !important;
+  margin-top: 80px !important;
+  }
+  h5 {
+  font-size: 22px !important;
+  margin-top: 80px !important;
+  }
+  h6 {
+  font-size: 16px !important;
+  }
 }
 
-.col-md-8 {
+.col-md-5 {
+  border-bottom: 30px solid white;
   img {
     max-width: 100%;
   }
+}
+
+.col-md-12 {
+  border-left: 15px solid white;
+  border-right: 15px solid white;
+  border-bottom: 30px solid white;
 }
 
 .quote-col {
   display: flex;
   align-items: center;
 }
+

@@ -1,115 +1,132 @@
 
 <nav class="navbar navbar-expand-md navbar-light ">
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/login') }}">Qu'est-ce qu'e-BPM ?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/login') }}">Nos modules</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/login') }}">Echangeons</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/login') }}">Qui sommes-nous ?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/login') }}">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{{ url('/register') }}"><button type="button" class="btn btn-primary">Connexion</button></a>
-            </li>
-        </ul>
-    </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Qu'est-ce qu'e-BPM ?</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Vous avez dit "Bonnes pratiques" ?</a>
+            <a class="dropdown-item" href="#">Pourquoi e-BPM ?</a>
+            <a class="dropdown-item" href="#">Comment e-BPM ?</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nos modules</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Qu'est-ce que c'est ?</a>
+            <a class="dropdown-item" href="#">Comment ça marche ?</a>
+            <a class="dropdown-item" href="#">Nos modules</a>
+            <a class="dropdown-item" href="#">Offres et tarifs</a>
+            <a class="dropdown-item" href="#">Témoignages</a>
+            <a class="dropdown-item" href="#">Les modules en préparation</a>
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url('/login') }}">Echangeons</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Qui sommes-nous ?</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Les créateurs</a>
+            <a class="dropdown-item" href="#">Les contributeurs</a>
+            <a class="dropdown-item" href="#">L'équipe de développement</a>
+            <a class="dropdown-item" href="#">Les partenaires</a>
+          </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{{ url('/login') }}">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url('/register') }}"><button type="button" class="btn btn-outline-warning">Connexion</button></a>
+        </li>
+    </ul>
+  </div>
 </nav>
 
 <div class="banner">
   <%= image_tag "ebpm-banner.png" %>
 </div>
 
-<div class="line">
-  <div class="row">
-    <div class="col-sm-12 col-md-4 text-center background-blue-1 text-white">
-      <h1>Qu'est-ce qu'e-BPM ?</h1>
-      <p>La <strong>maintenance</strong> est un métier où vous, les professionnels êtes souvent isolés. Vous avez très peu d’occasions de vous rencontrer (d’autant moins en ce moment). Pourtant, pour s’améliorer, il est crucial de pouvoir se comparer, d’apprendre des autres, et de chercher les « meilleures pratiques ».</p>
 
-      <p>C’est pourquoi, nous avons développé ce site, e-BPM, destiné aux professionnels de la maintenance industrielle, pour rechercher, synthétiser, et diffuser les Bonnes Pratiques de Maintenance.</p>
-    </div>
-    <div class="col-sm-12 col-md-4 text-center background-blue-3 text-blue">
-      <h1>Les actualités e-BPM</h1>
-      <p>Nos actus et vos idées, suggestions...</p>
-    </div>
-    <div class="col-sm-12 col-md-4 text-center background-blue-2 text-blue">
-      <h1>Nos thématiques</h1>
-
-    </div>
-  </div>
-</div>
-
-<div class="line">
-  <div class="row">
-    <div class="col-sm-12 col-md-4 text-center text-blue quote-col">
-
-      <p>“L'expression « bonnes pratiques » désigne, dans un milieu professionnel donné, un ensemble de comportements qui font consensus et qui sont considérés comme indispensables par la plupart des professionnels du domaine.”
-      - Wikipédia</p>
+<div class="container">
+  <div class="line">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 background-blue-1 text-white">
+        <h1>e-BPM, solution d’e-training pour tous : </h1>
+        <h2>développer une maintenance performante.</h2>
+        <div class="text-center">
+          <p>Voir plus</p>
+        </div>
       </div>
-    <div class="col-sm-12 col-md-8">
-      <%= image_tag "ebpm-engrenages.png" %>
+      <div class="col-sm-12 col-md-4 background-blue-2 text-blue">
+        <h1>e-BPM, les actus :</h1>
+        <p></p>
+        <div class="text-center">
+          <p>Lire l'article</p>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 background-blue-3 text-white">
+        <h3><i>“Avoir un autre moyen de communication que la sainte parole d’un responsable...”</i></h3>
+        <h6>- Romaric DELMARLE, Responsable Maintenance Opérationnelle</h6>
+        <div class="text-center">
+          <p>Voir tous les témoignages</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="line">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 text-center background-blue-6 text-blue">
+        <h1>Thèmes d'e-training</h1>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="line">
+    <div class="row">
+      <div class="col-sm-12 col-md-5 offset-md-1 text-center text-orange">
+        <p><i>“L'expression « bonnes pratiques » désigne, dans un milieu professionnel donné, un ensemble de comportements qui font consensus [...]”</i></p>
+        <p>- Wikipédia</p>
+      </div>
+      <div class="col-sm-12 col-md-5 offset-md-1">
+        <%= image_tag "ebpm-engrenages.png" %>
+      </div>
     </div>
   </div>
 </div>
-
-
-<div class="line">
-  <div class="row">
-    <div class="col-sm-12 col-md-4 text-center background-blue-4 text-white">
-      <h1>Témoignages</h1>
-      <p>Romaric DELMARLE, Responsable Maintenance Opérationnelle</p>
-      <p>Sur l’intérêt des Bonnes Pratiques :</p>
-      <p><i>“Avoir un autre moyen de communication que la sainte parole d’un responsable.</i></p>
-      <p><i>Un moyen plus simple de former ou de réviser sans être obligé d’envoyer les gens en formation et de diminuer la capacité horaire de main d’œuvre.</i></p>
-      <p><i>Un message qui reste identique pour tous.”</i></p>
-      <p>Voir tous les témoignages</p>
-
-    </div>
-    <div class="col-sm-12 col-md-4 text-center background-blue-5 text-white">
-      <h1>Nos partenaires</h1>
-      <p>CIMI</p>
-      <p>Dunod</p>
-      <p>Bernard DECLERCQ</p>
-      <p>Renaud CUIGNET</p>
-    </div>
-    <div class="col-sm-12 col-md-4 text-center text-blue col-logo">
-      <%= image_tag "ebpm-logo.png" %>
-      <p>Adresse de la structure</p>
-      <p>CP</p>
-      <p>Ville</p>
-      <p>05.05.05.05.05</p>
-      <i class="fab fa-linkedin"></i>
-    </div>
-  </div>
-</div>
-
 <div class="footer">
-  <ul class="list-unstyled list-inline background-blue-1 text-white">
+  <div class="row">
+  <div class="col-sm-12 col-md-6 background-blue-1 text-white">
+    <ul class="list-unstyled list-inline">
+      <li class="list-inline-item">
+        <p>© e-BPM <%= Date.today.year %></p>
+      </li>
+      <li class="list-inline-item">
+        <p>Mentions légales</p>
+      </li>
+      <li class="list-inline-item">
+        <p>Politique de confidentialité</p>
+      </li>
+      <li class="list-inline-item">
+        <p>CGV</p>
+      </li>
+    </ul>
+  </div>
+    <div class="col-sm-12 col-md-6 background-blue-1 text-white">
+  <ul class="text-right list-inline">
     <li class="list-inline-item">
-      <p>© e-BPM <%= Date.today.year %></p>
+      <i class="fab fa-linkedin" style="font-size: 25px; line-height:50px;"></i>
     </li>
     <li class="list-inline-item">
-      <p>Mentions légales</p>
-    </li>
-    <li class="list-inline-item">
-      <p>Politique de confidentialité</p>
-    </li>
-    <li class="list-inline-item">
-      <p>CGV</p>
+    <%= image_tag "ebpm-logo-small.png" %>
     </li>
   </ul>
+</div>
+</div>
 </div>
 
